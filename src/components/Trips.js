@@ -14,22 +14,22 @@ const Trips = ({ heading }) => {
 
     const data = useStaticQuery(graphql`
         query TripsQuery {
-        allTripsJson {
-            edges {
-            node {
-                alt
-                button
-                name
-                img {
-                childImageSharp {
-                    fluid {
-                    ...GatsbyImageSharpFluid
+            allTripsJson {
+                edges {
+                    node {
+                        alt
+                        button
+                        name
+                        img {
+                            childImageSharp {
+                                fluid {
+                                ...GatsbyImageSharpFluid
+                                }
+                            }
+                        }
                     }
                 }
-                }
             }
-            }
-        }
         }
     `)
 
@@ -90,6 +90,7 @@ const TripsContainer = styled.div`
 
 const TripsHeading = styled.div`
     font-family: 'Playfair Display';
+    font-style: 'Bold';
     font-size: clamp(1.2rem, 5vw, 3rem);
     text-align: center;
     /* margin-top: 3rem; */
