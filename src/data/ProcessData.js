@@ -12,7 +12,7 @@ export const ProcessData = [
             `}
         />
         ),
-        title: "Planning",
+        title: "I'll Do The Planning",
         desc: "Booking should be stress-free. Research takes precious time, and planning a vacation can become overwhelming. That’s where a trusted advisor comes in. Whether you’re looking to check the Great Wall of China off your bucket list or stroll the cobblestone streets of Saint Germain, I will work with you on a service-based approach toward a completely personalized getaway.",
     },
     {

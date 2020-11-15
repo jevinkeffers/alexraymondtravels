@@ -12,7 +12,7 @@ const Hero = () => {
             <HeroContent>
                 <HeroItems>
                     <HeroH1>Alex Raymond Travels</HeroH1>
-                    <HeroP>itenarary design focused on the ART of discovery</HeroP>
+                    <HeroP>Itenarary design focused on the ART of discovery.</HeroP>
                     <Button primary='true' big='true' round='true' to='/contact'>Travel Now!</Button>
                 </HeroItems>
             </HeroContent>
@@ -31,7 +31,8 @@ const HeroContainer = styled.div`
     padding: 0 1rem;
     position: relative;
     margin-top: -80px;
-    color: #fff;
+    /* margin-bottom: 3rem; */
+    color: #FFFFF0;
     
     // overlay
     :before {
@@ -53,6 +54,7 @@ const HeroContainer = styled.div`
 
 const HeroBg = styled.div`
     position: absolute;
+    background: #fffff0;
     top: 0;
     bottom: 0;
     right: 0;

@@ -78,8 +78,8 @@ function getTrips(data) {
 export default Trips
 
 const TripsContainer = styled.div`
-    min-height: 100vh;
-    padding: 5rem calc((100vw - 1300px) / 2);
+    /* min-height: 100vh; */
+    padding: rem calc((100vw - 1300px) / 2);
     background-color: #FFFFF0;
     color: #FFFFF0;
 `
@@ -87,7 +87,8 @@ const TripsContainer = styled.div`
 const TripsHeading = styled.div`
     font-size: clamp(1.2rem, 5vw, 3rem);
     text-align: center;
-    margin-bottom: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     color: #2a2a2a;
 `
 
