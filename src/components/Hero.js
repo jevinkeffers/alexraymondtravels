@@ -1,9 +1,15 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import styled from 'styled-components'
 import { Button } from './Button'
 import Video from '../assets/videos/travel.mp4'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Hero = () => {
+    useEffect(() => {
+        Aos.init({})
+    }, [])
+
     return (
         <HeroContainer>
             <HeroBg>
@@ -11,9 +17,31 @@ const Hero = () => {
             </HeroBg>
             <HeroContent>
                 <HeroItems>
-                    <HeroH1>Alex Raymond Travels</HeroH1>
-                    <HeroP>Itenarary design focused on the ART of discovery.</HeroP>
-                    <Button primary='true' big='true' round='true' to='/contact'>Travel Now!</Button>
+                    <HeroH1
+                        data-aos="fade-up"
+                        data-aos-delay="150"
+                        data-aos-duration="1000"
+                    >
+                        Alex Raymond Travels
+                    </HeroH1>
+                    <HeroP
+                        data-aos="fade-up"
+                        data-aos-delay="350"
+                        data-aos-duration="1000"
+                    >
+                        Itenarary design focused on the ART of discovery.
+                    </HeroP>
+                    <Button 
+                        primary='true' 
+                        big='true' 
+                        round='true' 
+                        to='/contact'
+                        data-aos="flip-up"
+                        data-aos-delay="350"
+                        data-aos-duration="3000"
+                    >
+                        Travel Now!
+                    </Button>
                 </HeroItems>
             </HeroContent>
         </HeroContainer>
@@ -101,6 +129,7 @@ const HeroH1 = styled.h1`
 
 const HeroP = styled.p`
     font-size: clamp(1rem, 3vw, 3rem);
+    font-family: 'Playfair display';
     margin-bottom: 2rem;
     font-weight: 400;
 `

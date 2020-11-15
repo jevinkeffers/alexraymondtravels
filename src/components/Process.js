@@ -1,16 +1,33 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import styled from 'styled-components'
 import { ProcessData } from '../data/ProcessData'
+import Aos from "aos"
+import "aos/dist/aos.css"
 
 const Process = () => {
+    useEffect(() => {
+        Aos.init({})
+    }, [])
+
     return (
         <ProcessContainer>
             <TopLine>The Process</TopLine>
-            <Heading>Why Choose Alex?</Heading>
+            <Heading
+                data-aos="fade-right"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+            >
+                Why Choose Alex?
+            </Heading>
             <Wrapper>
                 {ProcessData.map((item, index) => {
                     return (
-                        <ProcessBox key={index}>
+                        <ProcessBox 
+                                key={index}
+                                data-aos="fade-right"
+                                data-aos-delay="150"
+                                data-aos-duration="1000"
+                            >
                             <Icon>{item.icon}</Icon>
                             <Title>{item.title}</Title>
                             <Description>{item.desc}</Description>
@@ -42,6 +59,7 @@ const TopLine = styled.p`
 
 const Heading = styled.h1`
     text-align: start;
+    font-family: 'Playfair Display';
     font-size: clamp(1.5rem, 5vw, 2rem);
     margin-bottom: 3rem;
     padding: 0 2rem;

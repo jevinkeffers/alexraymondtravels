@@ -8,9 +8,6 @@ import Email from "../components/Email"
 
 const ContactPage = () => (
     <Layout>
-        <SEO title="Contact Alex Raymond Travels" />
-        <Testimonials />
-        <Process />
         <Email />
     </Layout>
 )

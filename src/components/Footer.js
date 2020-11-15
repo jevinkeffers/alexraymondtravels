@@ -43,6 +43,7 @@ const FooterContainer = styled.div`
 `
 
 const FooterDesc = styled.div`
+    font-family: 'Playfair Display';
     padding: 0 2rem;
 
     h1 {

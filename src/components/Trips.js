@@ -1,13 +1,17 @@
-import React from "react"
+import React, {useEffect} from "react"
 import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Button } from "./Button"
 import { ImLocation } from "react-icons/im"
-// import Aos from "aos"
-// import "aos/dist/aos.css"
+import Aos from "aos"
+import "aos/dist/aos.css"
 
 const Trips = ({ heading }) => {
+    useEffect(() => {
+        Aos.init({})
+    }, [])
+
     const data = useStaticQuery(graphql`
         query TripsQuery {
         allTripsJson {
@@ -35,9 +39,9 @@ function getTrips(data) {
         tripsArray.push(
             <TripsCard
             key={index}
-            // data-aos="fade-down"
-            // data-aos-delay="50"
-            // data-aos-duration="1000"
+            data-aos="fade-down"
+            data-aos-delay="50"
+            data-aos-duration="1000"
             >
             <TripsImg
                 alt={item.node.alt}
@@ -85,9 +89,10 @@ const TripsContainer = styled.div`
 `
 
 const TripsHeading = styled.div`
+    font-family: 'Playfair Display';
     font-size: clamp(1.2rem, 5vw, 3rem);
     text-align: center;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
     margin-bottom: 3rem;
     color: #2a2a2a;
 `
