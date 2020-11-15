@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState, useEffect} from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import {FaBars} from 'react-icons/fa'
@@ -7,8 +7,17 @@ import { Button } from "./Button"
 // import Logo from "../assets/images/Home-ivory.png"
 
 const Header = ({ toggle }) => {
+  const [navbar, setNavbar] = useState(false)
+
+  useEffect(() => {
+    if(window.location.pathname) {
+      setNavbar(window.location.pathname)
+    }
+    console.log(window.location.pathname)
+  }, [])
+
   return (
-    <Nav>
+    <Nav navbar={navbar}>
       <NavLink className="navbar-logo" to="/">Alex Raymond Travels</NavLink>
       <Bars onClick={toggle} />
       <NavMenu>
@@ -28,7 +37,7 @@ const Header = ({ toggle }) => {
 export default Header
 
 const Nav = styled.nav`
-  background: transparent;
+  background: ${({ navbar }) => (navbar != "/" ? "#4b3621" : "transparent")};
   height: 80px;
   display: flex;
   justify-content: space-between;
