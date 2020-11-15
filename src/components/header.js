@@ -6,11 +6,11 @@ import { menuData } from '../data/MenuData'
 import { Button } from "./Button"
 // import Logo from "../assets/images/Home-ivory.png"
 
-const Header = () => {
+const Header = ({ toggle }) => {
   return (
     <Nav>
       <NavLink className="navbar-logo" to="/">Alex Raymond Travels</NavLink>
-      <Bars />
+      <Bars onClick={toggle} />
       <NavMenu>
         {menuData.map((item, index) => (
           <NavLink to={item.link} key={index}>
