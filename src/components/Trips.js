@@ -89,6 +89,7 @@ const TripsContainer = styled.div`
 `
 
 const TripsHeading = styled.div`
+    background-color: #FFFFF0;
     font-family: 'Playfair Display';
     font-style: 'Bold';
     font-size: clamp(1.2rem, 5vw, 3rem);

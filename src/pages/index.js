@@ -6,7 +6,8 @@ import AboutAlex from '../components/AboutAlex'
 import Trips from '../components/Trips'
 import Testimonials from "../components/Testimonials"
 import Process from "../components/Process"
-import Email from "../components/Email"
+import EmailForm from "../components/EmailForm"
+// import Email from "../components/Email"
 
 const IndexPage = () => (
   <Layout>
@@ -16,7 +17,8 @@ const IndexPage = () => (
     <Trips heading="Favorite Destinations" />
     <Process />
     <Testimonials />
-    <Email />
+    <EmailForm />
+    {/* <Email /> */}
   </Layout>
 )
 

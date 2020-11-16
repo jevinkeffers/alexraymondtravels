@@ -1,5 +1,5 @@
 require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV || 'production'}`,
+  path: `.env.${process.env.NODE_ENV}`
 })
 
 module.exports = {
@@ -9,6 +9,7 @@ module.exports = {
     author: `https://github.com/jevinkeffers`,
   },
   plugins: [
+    `gatsby-plugin-material-ui`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     {
@@ -52,6 +53,13 @@ module.exports = {
       options: {
         spaceId: "jc35ohpaz200",
         accessToken: "gmh4B7LHkPsCNtECd0E5oECnh0jjxZCOL6aNDxp4B7Q",
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: 'https://epperlytravel.us20.list-manage.com/subscribe/post?u=e26cda73ffe7fbff28626a123&amp;id=b9ca6ffc83',
+        timeout: 3500,
       },
     },
   ],

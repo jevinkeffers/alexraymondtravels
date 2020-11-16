@@ -4,11 +4,11 @@ import Layout from "../components/layout"
 // import Trips from '../components/Trips'
 // import Testimonials from "../components/Testimonials"
 // import Process from "../components/Process"
-import Email from "../components/Email"
+import EmailForm from "../components/EmailForm"
 
 const ContactPage = () => (
     <Layout>
-        <Email />
+        <EmailForm />
     </Layout>
 )
 
