@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { Button } from "../components/Button"
 import Layout from "../components/layout"
 import Video from '../assets/videos/travel2.mp4'
-import SEO from "../components/seo"
+import SEO from "../components/SEO"
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
