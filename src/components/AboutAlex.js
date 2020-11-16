@@ -160,3 +160,4 @@ const ColumnTwo = styled.div`
 const Images = styled(Img)`
     border-radius: 10px;
     height: 100%;
+`

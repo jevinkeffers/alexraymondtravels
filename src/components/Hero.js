@@ -60,11 +60,11 @@ const HeroContainer = styled.div`
     position: relative;
     margin-top: -80px;
     color: #FFFFF0;
-
+`
 
 const HeroBg = styled.div`
     position: absolute;
-    background: #fffff0;
+    background-color: #fffff0;
     top: 0;
     bottom: 0;
     right: 0;
