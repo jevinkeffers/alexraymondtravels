@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react'
 import styled from 'styled-components'
 import { Button } from './Button'
+import Social from './Social'
 import Video from '../assets/videos/travel.mp4'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -40,7 +41,7 @@ const Hero = () => {
                         data-aos-delay="350"
                         data-aos-duration="3000"
                     >
-                        Travel Now!
+                        Book now!
                     </Button>
                 </HeroItems>
             </HeroContent>
@@ -122,6 +123,8 @@ const HeroItems = styled.div`
 
 const HeroH1 = styled.h1`
     font-size: clamp(1.5rem, 6vw, 4rem);
+    font-family: 'Playfair Display';
+    font-style: italic;
     margin-bottom: 1.5rem;
     letter-spacing: 3px;
     padding: 0 1rem;

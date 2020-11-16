@@ -65,9 +65,7 @@ const Testimonials = () => {
                 <h3>Sean Michaels</h3>
                 <p>
                 {" "}
-                "The greatest experience of my life! It was so much fun exploring
-                the mountains and they made it super easy to book my trip and
-                accommodation."
+                "Lorem ipsum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum."
                 </p>
             </Testimonial>
             <Testimonial
@@ -84,9 +82,7 @@ const Testimonials = () => {
                 />
                 <h3>Sarah Kin</h3>
                 <p>
-                "It was so easy to set up my trip! They answered all my questions
-                right away and gave me the best price out of all the companies I
-                researched."
+                "Lorem ipsum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum."
                 </p>
             </Testimonial>
             </ColumnOne>

@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV || 'production'}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Alex Raymond Travels`,
@@ -40,6 +44,14 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `./src/data/`,
+      },
+    },
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: "jc35ohpaz200",
+        accessToken: "gmh4B7LHkPsCNtECd0E5oECnh0jjxZCOL6aNDxp4B7Q",
       },
     },
   ],

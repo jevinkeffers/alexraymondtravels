@@ -91,8 +91,11 @@ const Icon = styled.div`
 `
 
 const Title = styled.p`
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: bold;
     font-size: clamp(1rem, 2.5vw, 1.5rem);
-    font-style: strong;
     margin-bottom: 0.5rem;
 `
 

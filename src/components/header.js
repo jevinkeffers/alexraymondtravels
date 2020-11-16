@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import {FaBars} from 'react-icons/fa'
+import { FaBars } from 'react-icons/fa'
+import { RiHomeHeartFill } from 'react-icons/ri'
 import { menuData } from '../data/MenuData'
 import { Button } from "./Button"
-// import Logo from "../assets/images/Home-ivory.png"
 
 const Header = ({ toggle }) => {
   const [navbar, setNavbar] = useState(false)
@@ -18,7 +18,9 @@ const Header = ({ toggle }) => {
 
   return (
     <Nav navbar={navbar}>
-      <NavLink className="navbar-logo" to="/">Alex Raymond Travels</NavLink>
+      <Link to="/">
+        <Home className="navbar-logo" alt="home" />
+      </Link>
       <Bars onClick={toggle} />
       <NavMenu>
         {menuData.map((item, index) => (
@@ -37,13 +39,23 @@ const Header = ({ toggle }) => {
 export default Header
 
 const Nav = styled.nav`
-  background: ${({ navbar }) => (navbar != "/" ? "#4b3621" : "transparent")};
+  background: ${({ navbar }) => (navbar !== "/" ? "#4b3621" : "transparent")};
   height: 80px;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1300px) / 2);
   z-index: 100;
   position: relative;
+`
+
+const Home = styled(RiHomeHeartFill)`
+  color: #fffff0;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  margin: 0 1rem;
+  height: 100%;
+  cursor: pointer;
 `
 
 const NavLink = styled(Link)`
