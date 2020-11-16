@@ -54,7 +54,7 @@ const Blog = () => {
                             {edge.node.subhead}
                         </p>
                         <div className="button">
-                        <Link to={`/blog/${edge.node.slug}/`}>Read More</Link>
+                        <Link to={`/blog/${edge.node.slug}/`}></Link>
                         </div>
                     </li>
                     )

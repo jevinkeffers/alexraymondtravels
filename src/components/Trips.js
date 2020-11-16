@@ -63,6 +63,7 @@ function getTrips(data) {
                 `}
                 >
                 {item.node.button}
+                Ask For Info
                 </Button>
             </TripsInfo>
             </TripsCard>

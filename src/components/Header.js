@@ -66,6 +66,7 @@ const NavLink = styled(Link)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+
 `
 
 const Bars = styled(FaBars)`

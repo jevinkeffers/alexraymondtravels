@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 
 const Footer = () => {
     return (
+        <>
         <FooterContainer>
             <FooterLinksWrapper>
                 <FooterDesc>
@@ -29,6 +30,12 @@ const Footer = () => {
                 </FooterLinkItems>
             </FooterLinksWrapper>
         </FooterContainer>
+        <FooterCopyright>
+        <p>
+            © 2020 | Page built and designed by <Link to="https://github.com/jevinkeffers" alt="Kevin Jeffers GitHub" target="_blank">Kevin Jeffers </Link> with <Link to="https://www.gatsbyjs.com/" alt="Gatsby JS" target="_blank"> Gatsby</Link>.
+        </p>
+        </FooterCopyright>
+        </>
     )
 }
 
@@ -43,12 +50,17 @@ const FooterContainer = styled.div`
 `
 
 const FooterDesc = styled.div`
-    font-family: 'Playfair Display';
     padding: 0 2rem;
 
     h1 {
+        font-family: 'Playfair Display';
+        font-style: italic;
         margin-bottom: 1rem;
         color: #cc9999;
+    }
+
+    p {
+        font-family: 'Playfair Display';
     }
 
     @media screen and (max-width: 400px) {
@@ -93,3 +105,27 @@ const FooterLink = styled(Link)`
     }
 `
 
+const FooterCopyright = styled.p `
+    font-size: .7rem;
+    background-color: #FFFFF0;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    justify-content: center;
+
+    a:link {
+        text-decoration: underline;
+        color: #2a2a2a;
+    }
+
+    a:visited {
+        text-decoration: underline;
+        color: #2a2a2a;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: #cc9999;
+    }
+
+`
