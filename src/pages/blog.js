@@ -1,14 +1,14 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Blog from "../components/Blog"
-import Email from "../components/Email"
+import TravelAdvisorFront from "../components/TravelAdvisorFront"
+import EmailForm from "../components/EmailForm"
 
 const BlogPage = () => (
     <Layout>
-        <SEO title="Alex Raymond Travels Blog" />
-        <Blog />
-        <Email />
+        <SEO title="Alex Raymond Travels: Blog" />
+        <TravelAdvisorFront />
+        <EmailForm />
     </Layout>
 )
 

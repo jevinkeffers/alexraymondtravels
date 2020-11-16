@@ -53,7 +53,7 @@ function getTrips(data) {
                 <TripsTitle>{item.node.name}</TripsTitle>
                 </TextWrap>
                 <Button
-                to="/trips"
+                to="/contact"
                 primary="true"
                 round="true"
                 css={`

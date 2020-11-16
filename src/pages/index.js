@@ -1,8 +1,9 @@
 import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/Layout"
+import SEO from "../components/SEO"
 import Hero from '../components/Hero'
 import AboutAlex from '../components/AboutAlex'
+import TravelAdvisorFront from '../components/TravelAdvisorFront'
 import Trips from '../components/Trips'
 import Testimonials from "../components/Testimonials"
 import Process from "../components/Process"
@@ -14,7 +15,8 @@ const IndexPage = () => (
     <SEO title="Home" />
     <Hero />
     <AboutAlex />
-    <Trips heading="Favorite Destinations" />
+    <TravelAdvisorFront />
+    <Trips heading="Exclusive Packages" />
     <Process />
     <Testimonials />
     <EmailForm />

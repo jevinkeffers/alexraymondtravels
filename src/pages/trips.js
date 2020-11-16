@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Trips from '../components/Trips'
-import EmailForm from "../components/EmailForm"
+// import EmailForm from "../components/EmailForm"
 
 const TripsPage = () => (
     <Layout>
