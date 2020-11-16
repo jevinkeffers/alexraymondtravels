@@ -2,7 +2,7 @@ import React, { useEffect } from "react"
 import styled from "styled-components"
 // import { Link } from "gatsby"
 import Img from "gatsby-image"
-import { AiFillQuestionCircle } from "react-icons/ai"
+import { BsSun } from "react-icons/bs"
 import { useStaticQuery, graphql } from "gatsby"
 import { Button } from './Button'
 import Aos from "aos"
@@ -18,7 +18,7 @@ const TravelAdvisor = () => {
         allFile(
             filter: {
             ext: { regex: "/(jpg)|(png)|(jpeg)/" }
-            name: { in: ["compass"] }
+            name: { in: ["california"] }
             }
         ) {
             edges {
@@ -56,24 +56,24 @@ const TravelAdvisor = () => {
                         data-aos-delay="150"
                         data-aos-duration="1200"
                     >
-                        <AiFillQuestionCircle
+                        <BsSun
                         css={`
                             color: #cc9999;
                             font-size: 2rem;
                             margin-bottom: 1rem;
                         `}
                         />
-                        <h3>Why Travel With An Advisor?</h3>
+                        <h3>Cruising The California Coast</h3>
                         <p>
                             {" "}
-                            Peace of mind, exclusivity, insider knowledge and experience are just a few of the reasons why a trusted travel advisor can be your most loyal confidante. Let's talk about why traveling with a personal advisor will make your trip a dream come true.
+                            2020 is the the year of the road trip with many pandemic-related travel restrictions still in place and if you’re in need of views that take your breath away, then a hop in the car and a cruise along Highway 1 will give you just that. 
                         </p>
                         <div>
                         <Button 
                             primary='true'
                             big='false' 
                             round='true'
-                            to='/travel-advisor'
+                            to='/california'
                             data-aos="flip-up"
                             data-aos-delay="350"
                             data-aos-duration="3000"
@@ -163,7 +163,7 @@ h3 {
 
 p {
     color: #2a2a2a;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 `
 

@@ -3,5 +3,5 @@ export const menuData = [
     { title: "Trips", link: "/trips" },
     { title: "Blog", link: "/blog" },
     { title: "Contact", link: "/contact" },
-    { title: "Epperly Travel", link: "/https://www.epperlytravel.com/" },
+    // { title: "Epperly Travel", target="_blank": "/https://www.epperlytravel.com/" },
 ]
