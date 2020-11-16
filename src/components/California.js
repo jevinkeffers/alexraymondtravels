@@ -44,7 +44,7 @@ return (
             margin-bottom: 1rem;
             `}
         />
-        <TopLine>Unforgettable Roadtrip</TopLine>
+        <TopLine>Unforgettable Road Trip</TopLine>
         <h1>Cruising the California Coast</h1>
 
         {data.allFile.edges.map((image, key) => (

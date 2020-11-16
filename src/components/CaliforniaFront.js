@@ -40,7 +40,7 @@ const TravelAdvisor = () => {
                 data-aos-delay="50"
                 data-aos-duration="1000"
             >
-                Your Guide To The World
+                Unforgettable Road Trip
             </TopLine>
             {/* <Description
                 data-aos="fade-right"
@@ -83,8 +83,8 @@ const TravelAdvisor = () => {
                                 position: top;
                                 
                                 &:hover {
-                                background: "#white";
-                                border: 2px #cc9999;
+                                background: "white";
+                                border: 2px solid #cc9999;
                                 transform: translateY(-2px);
                                 color: #cc9999;
                             }

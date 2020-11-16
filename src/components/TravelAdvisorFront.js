@@ -84,7 +84,7 @@ const TravelAdvisor = () => {
                                 
                                 &:hover {
                                 background: "#white";
-                                border: 2px #cc9999;
+                                border: 2px solid #cc9999;
                                 transform: translateY(-2px);
                                 color: #cc9999;
                             }
