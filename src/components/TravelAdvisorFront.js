@@ -1,6 +1,5 @@
 import React, { useEffect } from "react"
 import styled from "styled-components"
-// import { Link } from "gatsby"
 import Img from "gatsby-image"
 import { AiFillQuestionCircle } from "react-icons/ai"
 import { useStaticQuery, graphql } from "gatsby"
@@ -42,13 +41,6 @@ const TravelAdvisor = () => {
             >
                 Your Guide To The World
             </TopLine>
-            {/* <Description
-                data-aos="fade-right"
-                data-aos-delay="50"
-                data-aos-duration="1000"
-            >
-                What People are Saying
-            </Description> */}
             <ContentWrapper>
                 <ColumnOne>
                     <Testimonial
@@ -127,14 +119,6 @@ const TopLine = styled.p`
     margin-bottom: 0.75rem;
     `
 
-// const Description = styled.p`
-// text-align: start;
-// padding-left: 2rem;
-// margin-bottom: 4rem;
-// font-size: clamp(1.5rem, 5vw, 2rem);
-// font-weight: bold;
-// `
-
 const ContentWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -182,12 +166,3 @@ const Images = styled(Img)`
     border-radius: 10px;
     height: 80%;
 `
-
-// const SocialLinks = styled.p`
-//     color: #fffff0;
-//     display: flex;
-//     align-items: center;
-//     font-size: 2rem;
-//     margin: 0 1rem;
-//     cursor: pointer;
-// `

@@ -66,7 +66,6 @@ const ErrorContainer = styled.div`
     padding: 0 1rem;
     position: relative;
     margin-top: -80px;
-    /* margin-bottom: 3rem; */
     color: #FFFFF0;
     
     // overlay

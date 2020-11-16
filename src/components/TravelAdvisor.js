@@ -4,7 +4,6 @@ import { Link } from "gatsby"
 import Img from "gatsby-image"
 import { FaCompass } from "react-icons/fa"
 import { useStaticQuery, graphql } from "gatsby"
-// import { Button } from './Button'
 import Aos from "aos"
 import "aos/dist/aos.css"
 
@@ -151,13 +150,7 @@ const ContentWrapper = styled.div`
 padding: 1rem;
 justify-content: center;
 margin: 0 auto;
-
 `
-
-// const ColumnOne = styled.div`
-// display: grid;
-// grid-template-rows: 1fr;
-// `
 
 const BlogBody = styled.div`
 padding-top: 1rem;
@@ -217,7 +210,6 @@ a:hover {
 const Image = styled(Img)`
 margin-top: 1rem;
 margin-bottom: 2rem;
-/* border-radius: 10px; */
 display: cover;
 height: 100%;
 `

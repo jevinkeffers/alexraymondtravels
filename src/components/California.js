@@ -4,7 +4,6 @@ import { Link } from "gatsby"
 import Img from "gatsby-image"
 import { FaCompass } from "react-icons/fa"
 import { useStaticQuery, graphql } from "gatsby"
-// import { Button } from './Button'
 import Aos from "aos"
 import "aos/dist/aos.css"
 

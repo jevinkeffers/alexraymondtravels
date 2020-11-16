@@ -5,8 +5,6 @@ import Img from "gatsby-image"
 import { FaCompass } from "react-icons/fa"
 import { useStaticQuery, graphql } from "gatsby"
 import { FaFacebookSquare, FaInstagramSquare } from 'react-icons/fa'
-// import Epperly from '../assets/images/epperlytravel.png'
-// import Entre from '../assets/images/entretravel.png'
 import Aos from "aos"
 import "aos/dist/aos.css"
 
@@ -44,13 +42,6 @@ const AboutAlex = () => {
             >
                 Your Travel Advisor
             </TopLine>
-            {/* <Description
-                data-aos="fade-right"
-                data-aos-delay="50"
-                data-aos-duration="1000"
-            >
-                What People are Saying
-            </Description> */}
             <ContentWrapper>
                 <ColumnOne>
                     <Testimonial
@@ -91,12 +82,6 @@ const AboutAlex = () => {
                             `}
                             />
                         </Link>
-                        {/* <Link to ="https://www.epperlytravel.com/">
-                            <Epperly alt='Epperly Travel' />
-                        </Link>
-                        <Link to ="https://www.entretravel.com/">
-                            <Epperly alt='Entre Travel' />
-                        </Link> */}
                     </Testimonial>
                 </ColumnOne>
                 <ColumnTwo
@@ -129,14 +114,6 @@ const TopLine = styled.p`
     padding-left: 2rem;
     margin-bottom: 0.75rem;
     `
-
-// const Description = styled.p`
-// text-align: start;
-// padding-left: 2rem;
-// margin-bottom: 4rem;
-// font-size: clamp(1.5rem, 5vw, 2rem);
-// font-weight: bold;
-// `
 
 const ContentWrapper = styled.div`
     display: grid;
@@ -183,13 +160,3 @@ const ColumnTwo = styled.div`
 const Images = styled(Img)`
     border-radius: 10px;
     height: 100%;
-`
-
-// const SocialLinks = styled.p`
-//     color: #fffff0;
-//     display: flex;
-//     align-items: center;
-//     font-size: 2rem;
-//     margin: 0 1rem;
-//     cursor: pointer;
-// `

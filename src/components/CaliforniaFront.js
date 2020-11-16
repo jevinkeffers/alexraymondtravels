@@ -1,6 +1,5 @@
 import React, { useEffect } from "react"
 import styled from "styled-components"
-// import { Link } from "gatsby"
 import Img from "gatsby-image"
 import { BsSun } from "react-icons/bs"
 import { useStaticQuery, graphql } from "gatsby"
@@ -42,13 +41,6 @@ const TravelAdvisor = () => {
             >
                 Unforgettable Road Trip
             </TopLine>
-            {/* <Description
-                data-aos="fade-right"
-                data-aos-delay="50"
-                data-aos-duration="1000"
-            >
-                What People are Saying
-            </Description> */}
             <ContentWrapper>
                 <ColumnOne>
                     <Testimonial
@@ -126,14 +118,6 @@ const TopLine = styled.p`
     padding-left: 2rem;
     margin-bottom: 0.75rem;
     `
-
-// const Description = styled.p`
-// text-align: start;
-// padding-left: 2rem;
-// margin-bottom: 4rem;
-// font-size: clamp(1.5rem, 5vw, 2rem);
-// font-weight: bold;
-// `
 
 const ContentWrapper = styled.div`
     display: grid;

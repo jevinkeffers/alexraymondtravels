@@ -40,9 +40,6 @@ const Blog = () => {
                         <h2>
                             <Link to={`/blog/${edge.node.slug}/`}>{edge.node.headline}</Link>
                         </h2>
-                        {/* <div className="meta">
-                        <span>Posted on {edge.node.date}</span>
-                        </div> */}
                         {edge.node.featuredImage && (
                         <Img
                             className="featured"
