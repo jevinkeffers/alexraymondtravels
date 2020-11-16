@@ -8,10 +8,10 @@ const TripsPage = () => (
     <Layout>
         <SEO title="Alex Raymond Travels" />
         <Trips heading="Alex's Favorite Destinations"/>
-        <EmailForm 
+        {/* <EmailForm 
             css={`
             margin-top: 1rem;
-            `}/>
+            `}/> */}
     </Layout>
 )
 

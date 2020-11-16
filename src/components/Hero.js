@@ -63,7 +63,7 @@ const HeroContainer = styled.div`
     color: #FFFFF0;
     
     // overlay
-    :before {
+    /* :before {
         content: "";
         position: absolute;
         top: 0;
@@ -76,9 +76,8 @@ const HeroContainer = styled.div`
             rgba(0, 0, 0, 0.2) 0%,
             rgba(0, 0, 0, 0.6) 100%
         ),
-        linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
-    }
-`
+        linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%); */
+    }`
 
 const HeroBg = styled.div`
     position: absolute;
